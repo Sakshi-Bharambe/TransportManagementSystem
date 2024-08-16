@@ -1,0 +1,16 @@
+DECLARE
+  principal NUMBER;
+  rate NUMBER;
+  time_period NUMBER;
+  simple_interest_var NUMBER;
+BEGIN
+ 
+DBMS_OUTPUT.PUT_LINE('Enter Principal value:');
+principal := :principal;
+DBMS_OUTPUT.PUT_LINE('Enter Rate:');
+rate := :rate;
+DBMS_OUTPUT.PUT_LINE('Enter Time Period:');
+time_period := :time_period;
+  simple_interest(principal, rate, time_period, simple_interest_var);
+END;
+/
